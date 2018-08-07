@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 from sys import argv
 argv.pop(0)
+if not argv:
+    print('Usage: ./phonetic.py any string')
 ALPHABET= {
 'a':'(A)lpha',
 'b':'(B)ravo',
