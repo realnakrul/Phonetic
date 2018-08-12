@@ -29,12 +29,54 @@ ALPHABET= {
 'w':'(W)hiskey',
 'x':'(X)-ray',
 'y':'(Y)ankee',
-'z':'(Z)ulu'
+'z':'(Z)ulu',
+'0':'Zero',
+'1':'One',
+'2':'Two' ,  
+'3':'Three',
+'4':'Four',
+'5':'Five',
+'6':'Six',
+'7':'Seven',
+'8':'Eight',
+'9':'Nine',
+'!':'Exclamation mark',
+'"':'Quotation mark (double quote)',
+'#':'Hash sign (pound or number sign)',
+'$':'Dollar sign',
+'%':'Percent sign',
+'&':'Ampersand',
+'\'':'Apostrophe (single quote)',
+'(':'Open parenthesis (left round bracket)',
+')':'Close parenthesis (right round bracket)',
+'*':'Asterisk (star sign)',
+'+':'Plus sign',
+',':'Comma',
+'-':'Dash (minus sign)',
+'.':'Dot (period or decimal point)',
+'/':'Slash (forward slash)',
+':':'Colon',
+';':'Semicolon',
+'<':'Less than sign',
+'>':'Greater than sign',
+'=':'Equal sign',
+'?':'Question mark',
+'@':'At sign',
+'[':'Open bracket (left square bracket)',
+']':'Close bracket (right square bracket)',
+'\\':'Backslash',
+'^':'Caret',
+'_':'Underscore (underline)',
+'`':'Backquote (left single quote)',
+'{':'Open brace (left curly bracket)',
+'}':'Close brace (right curly bracket)',
+'|':'Pipe (vertical bar)',
+'~':'Tilde'
 }
 while argv:
     print('-'*20)
     print(str(argv[0]))
     for LETTER in argv[0].lower():
-        print('\t'+ALPHABET[LETTER])
+        print(LETTER+'\t'+ALPHABET[LETTER])
     argv.pop(0)
-    input('\nPress Enter to continiue...')
+    input('\nPress ENTER to continiue...')
